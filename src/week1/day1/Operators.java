@@ -43,6 +43,13 @@ public class Operators {
         System.out.println(i--);
         System.out.println(i);
 
+
+        boolean isTrue = true;
+        System.out.println(!isTrue);
+
+        boolean isFalse = false;
+        System.out.println(!isFalse);
+
     }
 
 }
