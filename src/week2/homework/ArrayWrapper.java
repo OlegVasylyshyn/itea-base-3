@@ -2,6 +2,8 @@ package week2.homework;
 
 public class ArrayWrapper {
 
+    private ArrayWrapper(){}
+
     private static int[] arr = new int[10];
     private static int size = 0;
 
