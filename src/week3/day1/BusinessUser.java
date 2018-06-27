@@ -2,6 +2,9 @@ package week3.day1;
 
 public class BusinessUser extends User {
 
+    private User user;
+    private User[] users;
+
     private String creditCard;
     String name = "business user";
 
