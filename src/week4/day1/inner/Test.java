@@ -1,11 +1,10 @@
-package week4.inner;
+package week4.day1.inner;
 
-import static week4.inner.StaticNesterClass.CONSTANT;
-import static week4.inner.StaticNesterClass.StaticNestedClass;
-import static week4.inner.StaticNesterClass.*;
+import static week4.day1.inner.StaticNesterClass.CONSTANT;
+import static week4.day1.inner.StaticNesterClass.StaticNestedClass;
 
 import week3.day2.zoo.Animal;
-import week4.inner.OuterClass.InnerClass;
+import week4.day1.inner.OuterClass.InnerClass;
 
 import java.util.ArrayList;
 import java.util.Comparator;

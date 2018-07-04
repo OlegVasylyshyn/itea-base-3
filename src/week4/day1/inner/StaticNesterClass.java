@@ -1,4 +1,4 @@
-package week4.inner;
+package week4.day1.inner;
 
 public class StaticNesterClass {
 
@@ -8,7 +8,7 @@ public class StaticNesterClass {
     public static class StaticNestedClass {
         public String f(){
             a = "";
-            return week4.inner.StaticNesterClass.CONSTANT;
+            return week4.day1.inner.StaticNesterClass.CONSTANT;
         }
     }
 

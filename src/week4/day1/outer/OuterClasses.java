@@ -1,4 +1,4 @@
-package week4.outer;
+package week4.day1.outer;
 
 public class OuterClasses {
 

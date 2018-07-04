@@ -34,7 +34,7 @@ public class User {
     }
 
     public String toString() {
-        return "User. Name - " + getName() + ", age - " + getAge();
+        return "NuclearStation. Name - " + getName() + ", age - " + getAge();
     }
 
 
