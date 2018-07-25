@@ -19,7 +19,7 @@ public class Test {
         Test.f();
 
         new Test().f2();
-//        Test.f2();
+//        MyLinkedListTest.f2();
 
         new B();
 
