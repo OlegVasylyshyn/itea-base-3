@@ -2,6 +2,7 @@ package week8.map;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class HashMapTest {
 
@@ -9,25 +10,31 @@ public class HashMapTest {
 
         Map<Hash, Integer> map = new HashMap<>();
 
-        // works fine
-        Hash key = new Hash(10);
-        map.put(key, 10);
-        map.put(new Hash(15), 15);
-        System.out.println(map.get(key));
-
-        // works bad
+        map.put(new Hash(10), 10);
         System.out.println(map.get(new Hash(10)));
 
     }
 
 }
 
-class Hash {
+final class Hash {
 
-    int hash;
+    final int hash;
 
     public Hash(int hash) {
         this.hash = hash;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Hash)) return false;
+        Hash hash1 = (Hash) o;
+        return hash == hash1.hash;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(hash);
+    }
 }
