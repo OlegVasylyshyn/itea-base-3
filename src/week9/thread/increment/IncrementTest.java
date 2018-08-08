@@ -3,6 +3,7 @@ package week9.thread.increment;
 public class IncrementTest {
 
     private static int count;
+    private static Object monitor = new Object();
 
     public static void main(String[] args) throws InterruptedException {
 
@@ -25,8 +26,11 @@ public class IncrementTest {
         }
     }
 
+    // Monitor IncrementTest.class
     private static synchronized void increment() {
-        count++;
+        synchronized (monitor){
+            count++;
+        }
     }
 
 }
