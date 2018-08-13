@@ -1,12 +1,12 @@
 package week9.thread;
 
-public class InterruptedException {
+public class InterruptedExceptionTest {
 
     public static void main(String[] args) {
 
-        Thread t1 = new Thread(InterruptedException::sleep);
-        Thread t2 = new Thread(InterruptedException::join);
-        Thread t3 = new Thread(InterruptedException::waitExample);
+        Thread t1 = new Thread(InterruptedExceptionTest::sleep);
+        Thread t2 = new Thread(InterruptedExceptionTest::join);
+        Thread t3 = new Thread(InterruptedExceptionTest::waitExample);
 
         t1.start();
         t2.start();

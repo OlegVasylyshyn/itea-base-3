@@ -1,6 +1,6 @@
 package week9.thread;
 
-public class SimpleThreadExample {
+public class SimpleThreadExampleTest {
 
     public static void main(String[] args) {
 
@@ -22,7 +22,7 @@ public class SimpleThreadExample {
         while (true) {
             try {
                 Thread.sleep(1000);
-            } catch (InterruptedException ignore) { /*NOPE*/}
+            } catch (InterruptedException e) { /*NOPE*/}
             System.out.println(Thread.currentThread().getName() + " - RUN MAIN");
         }
 

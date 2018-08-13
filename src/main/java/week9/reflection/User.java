@@ -2,6 +2,7 @@ package week9.reflection;
 
 public class User {
 
+    @ValidateField(maxLength = 10)
     private String firstName;
     private String lastName;
     private int age;

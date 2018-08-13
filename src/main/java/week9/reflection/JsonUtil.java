@@ -14,8 +14,15 @@ public class JsonUtil {
 
         StringBuilder sb = new StringBuilder("{");
         for (Field f : clazz.getDeclaredFields()) {
+
+            ValidateField annotation = f.getAnnotation(ValidateField.class);
             f.setAccessible(true);
             Object value = f.get(o);
+
+            if(annotation != null && value.getClass() == String.class && ((String)value).length() > annotation.maxLength()){
+                throw new ValidationException("Length was bigger then 10 letters");
+            }
+
             sb.append("\"")
                 .append(f.getName())
                 .append("\":\"")
